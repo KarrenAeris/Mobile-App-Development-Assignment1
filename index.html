@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html manifest="cmf.manifest">
+<head>
+<title>Tutorial Assignment 1: HTML Offline Web Application</title>
+<script>
+function changeImage()
+{
+document.images["jsbutton"].src= "img/picture_1.jpg";
+return true;
+}
+function changeImageMore()
+{
+document.images["jsbutton"].src= "img/picture_2.jpg";
+return true;
+}
+</script>
+</head>
+<body>
+<p><b>This is your last chance. After this there is no turning back.</b></p>
+<img name="jsbutton" src="img/picture_1.jpg" width="25%" height="25%" border="0">
+<br><input type=button onclick="changeImage()" style="background-color:blue; color:white" value="blue pill"></input>
+&nbsp;&nbsp;<input type=button onclick="changeImageMore()" style="background-color:red;color:white" value="red pill"></input>
+</body>
+</html>
